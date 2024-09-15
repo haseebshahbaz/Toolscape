@@ -16,42 +16,55 @@ const ToolFeatures = () => {
       title: 'Image Generation',
       description: 'Generate high-quality images from text inputs.',
       icon: <ImageIcon fontSize="large" style={{ color: '#f65329' }} />,
+      Link: "/image-gen"
     },
     {
       title: 'Icon Generation',
       description: 'Create custom icons based on your project needs.',
       icon: <IconGenIcon fontSize="large" style={{ color: '#f88b6f' }} />,
+      Link: "/icon-gen"
+
     },
     {
       title: 'PDF Generation',
       description: 'Generate PDFs from various content sources easily.',
       icon: <PictureAsPdfIcon fontSize="large" style={{ color: '#f65329' }} />,
+      Link: "/pdf-gen"
+
     },
     {
       title: 'Video Generation',
       description: 'Produce videos with AI-driven automation.',
       icon: <VideoLibraryIcon fontSize="large" style={{ color: '#f88b6f' }} />,
+      Link: "/video-gen"
+
     },
     {
       title: 'Background Generation',
       description: 'Automatically generate backgrounds for your projects.',
       icon: <BackgroundImageIcon fontSize="large" style={{ color: '#f65329' }} />,
+      Link: "/bg-gen"
+
     },
     {
       title: 'Background Removal',
       description: 'Easily remove backgrounds from images.',
       icon: <RemoveCircleOutlineIcon fontSize="large" style={{ color: '#f88b6f' }} />,
+      Link: "/bg-remove"
+
     },
     {
       title: 'Mockup News',
       description: 'Generate mockup news layouts for projects.',
       icon: <NewspaperIcon fontSize="large" style={{ color: '#f65329' }} />,
+      Link: "/mockup-news"
+
     },
   ];
 
   return (
-    <Container maxWidth="lg" style={{ marginTop: '50px', marginBottom: '50px' }}>
-      <Typography variant="h4" align="center" style={{ fontWeight: 'bold', marginBottom: '20px', color: '#192e3d' }}>
+    <Container maxWidth="lg" style={{ backgroundColor: '#192e3d' , color: 'white', marginTop: '20px', marginBottom: '50px' }}>
+      <Typography variant="h4" align="center" style={{ fontWeight: 'bold', marginBottom: '20px', color: 'white' }}>
         Tool Features
       </Typography>
       <Grid container spacing={4} justifyContent="center">
@@ -60,10 +73,10 @@ const ToolFeatures = () => {
     <Card
       style={{
         height: '100%',
-        backgroundColor: '#fcfcfc',
         borderRadius: '8px',
-        boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
+        boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.1)',
         textAlign: 'center',
+        
       }}
     >
       <CardContent>
@@ -74,7 +87,7 @@ const ToolFeatures = () => {
         <Typography variant="body2" style={{ color: '#192e3d', marginTop: '10px' }}>
           {feature.description}
         </Typography>
-        <Link to={`/tools/${feature.title.toLowerCase().replace(/\s+/g, '-')}`} style={{ textDecoration: 'none' }}>
+        <Link to={feature.Link} style={{ textDecoration: 'none' }}>
           <Button variant="contained" style={{ marginTop: '20px', backgroundColor: '#f65329', color: '#fff' }}>
             Learn More
           </Button>

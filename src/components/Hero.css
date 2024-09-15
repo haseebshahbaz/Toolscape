@@ -33,7 +33,7 @@
   background-image: linear-gradient(40deg, white, #f65329);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
+  animation: typing 5s steps(40, end), blink 0.75s step-end infinite;
   white-space: nowrap;
   overflow: hidden;
   border-right: 0.15em solid;
@@ -79,12 +79,13 @@
 /* Styles for mobile phones */
 @media (max-width: 600px) {
   .hero-title-animated {
-    font-size: 1.8rem;
+    font-size: 1 rem;
   }
 
   .toolscape-title {
-    font-size: 2.5rem;
+    font-size: 1 rem;
   }
+  
 
   .hero-description {
     font-size: 1rem;
@@ -99,11 +100,11 @@
 /* Styles for tablets */
 @media (max-width: 900px) {
   .hero-title-animated {
-    font-size: 2.2rem;
+    font-size: 1.2rem;
   }
 
   .toolscape-title {
-    font-size: 3rem;
+    font-size: 1.2rem;
   }
 
   .hero-description {

@@ -44,7 +44,7 @@ const Navbar = () => {
         {/* Conditionally render based on screen size */}
         {!isMobile ? (
           // Display buttons for large screens
-          <div style={{ display: 'flex', justifyContent: "center" , gap: '5px' }}>
+          <div style={{ display: 'flex', justifyContent: "center" , gap: '15px' }}>
             <Button color="inherit" startIcon={<ImageIcon />} component={Link} to="/image-gen" sx={{ backgroundColor: '#f65329', color: '#fff', '&:hover': { backgroundColor: 'white', color: '#f65329' } }}>
               Image Gen
             </Button>
@@ -58,10 +58,10 @@ const Navbar = () => {
               Video Gen
             </Button>
             <Button color="inherit" startIcon={<BackgroundImageIcon />} component={Link} to="/bg-gen" sx={{ backgroundColor: '#f65329', color: '#fff', '&:hover': { backgroundColor: 'white', color: '#f65329' } }}>
-              Background Gen
+              BG Gen
             </Button>
             <Button color="inherit" startIcon={<RemoveCircleOutlineIcon />} component={Link} to="/bg-remove" sx={{ backgroundColor: '#f65329', color: '#fff', '&:hover': { backgroundColor: 'white', color: '#f65329' } }}>
-              Background Remove
+              BG Remove
             </Button>
             <Button color="inherit" startIcon={<NewspaperIcon />} component={Link} to="/mockup-news" sx={{ backgroundColor: '#f65329', color: '#fff', '&:hover': { backgroundColor: 'white', color: '#f65329' } }}>
               Mockup News

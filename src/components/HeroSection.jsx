@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Container, Grid, Typography } from '@mui/material';
 import { motion } from 'framer-motion';
-import Hero from '../assets/new2.jpg'
+import Hero from '../assets/new3.jpg'
 import './Hero.css'; // For custom styles if needed
 
 const HeroSection = () => {
@@ -21,7 +21,7 @@ const HeroSection = () => {
           animate={{ x: 0 }}
           transition={{ type: 'spring', stiffness: 120 }}
         >
-          <Typography variant="h2" style={{ color: '#fcfcfc', fontWeight: 'bold' }}>
+          <Typography variant="h2" style={{ color: '#fcfcfc', fontWeight: 'bold' , }}>
             <span className="hero-title-animated">Explore the Future of AI Tools with</span>
           </Typography>
         </motion.div>
