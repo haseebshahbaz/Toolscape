@@ -29,6 +29,7 @@ function App() {
         <Route path="/bg-remove" element={<BgRemove />} />
         <Route path="/mockup-news" element={<MockupNews />} />
       </Routes>
+      
 
     </>
   );

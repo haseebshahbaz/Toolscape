@@ -1,31 +1,50 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Container, Typography, Grid, Button } from '@mui/material';
+import mockupGenerationBanner from '../assets/BGRemove.png'; // Update with correct path
+import './Tool.css'
 
-function BgRemove() {
-  const [image, setImage] = useState(null);
-
-  const handleImageUpload = (e) => {
-    setImage(URL.createObjectURL(e.target.files[0]));
-  };
-
-  const handleRemoveBackground = (e) => {
-    e.preventDefault();
-    // Add your background removal logic here
-  };
-
+const MockupGeneration = () => {
   return (
-    <div className="bg-remove">
-      <h1>AI Background Removal</h1>
-      <form onSubmit={handleRemoveBackground}>
-        <label>
-          Upload an image:
-          <input type="file" onChange={handleImageUpload} />
-        </label>
-        <button type="submit">Remove Background</button>
-      </form>
-      {image && <img src={image} alt="Uploaded" />}
-      {/* Display the image with the background removed here */}
+    <div className="image-generation-section" style={{ backgroundColor: '#192e3d', padding: '50px 0' }}>
+      <Container maxWidth="lg">
+        <Grid container spacing={4} alignItems="center">
+          {/* Left Section: Image */}
+          <Grid item xs={12} md={6}>
+            <div className="image-wrapper">
+              <img
+                src={mockupGenerationBanner}
+                alt="AI Icon Generation"
+                className="image-generation-banner"
+                style={{ width: '100%', borderRadius: '12px', boxShadow: '0px 8px 20px rgba(0, 0, 0, 0.1)' }}
+              />
+            </div>
+          </Grid>
+
+          {/* Right Section: Content */}
+          <Grid item xs={12} md={6}>
+            <Typography variant="h3" gutterBottom style={{ fontWeight: 'bold', color: 'white' }}>
+            AI Background Removal
+            </Typography>
+            <Typography variant="body1" style={{ marginBottom: '20px', color: 'white' }}>
+            Remove backgrounds from images instantly with our AI-powered background removal tool. Ideal for creating clean, professional visuals for design, ecommerce, or presentations.            </Typography>
+            <Button
+              variant="contained"
+              style={{
+                backgroundColor: '#f65329',
+                color: '#fff',
+                padding: '10px 20px',
+                borderRadius: '8px',
+                fontSize: '16px',
+                boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
+              }}
+            >
+              Get Started
+            </Button>
+          </Grid>
+        </Grid>
+      </Container>
     </div>
   );
-}
+};
 
-export default BgRemove;
+export default MockupGeneration;

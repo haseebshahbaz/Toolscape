@@ -1,0 +1,36 @@
+/* Features.css */
+
+.card-container {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-container:hover {
+  transform: translateY(-10px); /* Move the card up slightly */
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3); /* Add a larger shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.card-icon {
+  transition: color 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.card-container:hover .card-icon {
+  color: #f88b6f; /* Change icon color on hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.card-button {
+  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.card-container:hover .card-button {
+  background-color: #f88b6f; /* Change button background color on hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}

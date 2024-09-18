@@ -45,25 +45,25 @@ const Navbar = () => {
         {!isMobile ? (
           // Display buttons for large screens
           <div style={{ display: 'flex', justifyContent: "center" , gap: '15px' }}>
-            <Button color="inherit" startIcon={<ImageIcon />} component={Link} to="/image-gen" sx={{ backgroundColor: '#f65329', color: '#fff', '&:hover': { backgroundColor: 'white', color: '#f65329' } }}>
+            <Button color="inherit" startIcon={<ImageIcon />} component={Link} to="/image-gen" sx={{ backgroundColor: '#192e3d', color: '#fff', '&:hover': { backgroundColor: 'white', color: '#f65329' } }}>
               Image Gen
             </Button>
-            <Button color="inherit" startIcon={<IconGenIcon />} component={Link} to="/icon-gen" sx={{ backgroundColor: '#f65329', color: '#fff', '&:hover': { backgroundColor: 'white', color: '#f65329' } }}>
+            <Button color="inherit" startIcon={<IconGenIcon />} component={Link} to="/icon-gen" sx={{ backgroundColor: '#192e3d', color: '#fff', '&:hover': { backgroundColor: 'white', color: '#f65329' } }}>
               Icon Gen
             </Button>
-            <Button color="inherit" startIcon={<PictureAsPdfIcon />} component={Link} to="/pdf-gen" sx={{ backgroundColor: '#f65329', color: '#fff', '&:hover': { backgroundColor: 'white', color: '#f65329' } }}>
+            <Button color="inherit" startIcon={<PictureAsPdfIcon />} component={Link} to="/pdf-gen" sx={{ backgroundColor: '#192e3d', color: '#fff', '&:hover': { backgroundColor: 'white', color: '#f65329' } }}>
               PDF Gen
             </Button>
-            <Button color="inherit" startIcon={<VideoLibraryIcon />} component={Link} to="/video-gen" sx={{ backgroundColor: '#f65329', color: '#fff', '&:hover': { backgroundColor: 'white', color: '#f65329' } }}>
+            <Button color="inherit" startIcon={<VideoLibraryIcon />} component={Link} to="/video-gen" sx={{ backgroundColor: '#192e3d', color: '#fff', '&:hover': { backgroundColor: 'white', color: '#f65329' } }}>
               Video Gen
             </Button>
-            <Button color="inherit" startIcon={<BackgroundImageIcon />} component={Link} to="/bg-gen" sx={{ backgroundColor: '#f65329', color: '#fff', '&:hover': { backgroundColor: 'white', color: '#f65329' } }}>
+            <Button color="inherit" startIcon={<BackgroundImageIcon />} component={Link} to="/bg-gen" sx={{ backgroundColor: '#192e3d', color: '#fff', '&:hover': { backgroundColor: 'white', color: '#f65329' } }}>
               BG Gen
             </Button>
-            <Button color="inherit" startIcon={<RemoveCircleOutlineIcon />} component={Link} to="/bg-remove" sx={{ backgroundColor: '#f65329', color: '#fff', '&:hover': { backgroundColor: 'white', color: '#f65329' } }}>
+            <Button color="inherit" startIcon={<RemoveCircleOutlineIcon />} component={Link} to="/bg-remove" sx={{ backgroundColor: '#192e3d', color: '#fff', '&:hover': { backgroundColor: 'white', color: '#f65329' } }}>
               BG Remove
             </Button>
-            <Button color="inherit" startIcon={<NewspaperIcon />} component={Link} to="/mockup-news" sx={{ backgroundColor: '#f65329', color: '#fff', '&:hover': { backgroundColor: 'white', color: '#f65329' } }}>
+            <Button color="inherit" startIcon={<NewspaperIcon />} component={Link} to="/mockup-news" sx={{ backgroundColor: '#192e3d', color: '#fff', '&:hover': { backgroundColor: 'white', color: '#f65329' } }}>
               Mockup News
             </Button>
           </div>
