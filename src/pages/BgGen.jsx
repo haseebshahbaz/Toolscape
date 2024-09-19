@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Typography, Grid, Button } from '@mui/material';
-import mockupGenerationBanner from '../assets/BGGen.jpeg'; // Update with correct path
+import mockupGenerationBanner from '../assets/BGGen.webp'; // Update with correct path
 import './Tool.css'
 
 const MockupGeneration = () => {

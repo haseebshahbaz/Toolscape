@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Typography, Grid, Button } from '@mui/material';
-import pdfGenerationBanner from '../assets/PDFGen.jpeg'; // Update with correct path
+import pdfGenerationBanner from '../assets/PDFGen.webp'; // Update with correct path
 import './Tool.css'
 
 const PDFGeneration = () => {
