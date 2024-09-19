@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Typography, Grid, Button } from "@mui/material";
-import iconGenerationBanner from "../assets/image.png"; // Update with correct path
+import iconGenerationBanner from "../assets/IconGen.png"; // Update with correct path
 import "./Tool.css";
 
 const IconGeneration = () => {

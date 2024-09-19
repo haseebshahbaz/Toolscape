@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button, Container, Typography } from '@mui/material';
 import { motion } from 'framer-motion';
-import Hero from '../assets/new3.jpg';
 import './Hero.css'; // For custom styles if needed
 
 const HeroSection = () => {
