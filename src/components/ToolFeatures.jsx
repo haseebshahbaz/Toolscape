@@ -1,6 +1,5 @@
-import React from 'react';
-import { Grid, Typography, Card, CardContent, Container } from '@mui/material';
-import { Button } from '@mui/material';
+import React, { forwardRef } from 'react';
+import { Grid, Typography, Card, CardContent, Container, Button } from '@mui/material';
 import ImageIcon from '@mui/icons-material/Image';
 import IconGenIcon from '@mui/icons-material/Category';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
@@ -11,55 +10,55 @@ import NewspaperIcon from '@mui/icons-material/Newspaper';
 import { Link } from 'react-router-dom';
 import './Features.css'; // Import CSS file for hover effects
 
-const ToolFeatures = () => {
+const ToolFeatures = forwardRef((props, ref) => {
   const features = [
     {
       title: 'Image Generation',
       description: 'Generate high-quality images from text inputs.',
-      icon: <ImageIcon className="card-icon" fontSize="large" style={{ color: '#f65329' }} />,
-      Link: "/image-gen"
+      icon: <ImageIcon fontSize="large" sx={{ color: '#f65329' }} />,
+      link: "/image-gen"
     },
     {
       title: 'Icon Generation',
       description: 'Create custom icons based on your project needs.',
-      icon: <IconGenIcon className="card-icon" fontSize="large" style={{ color: '#f88b6f' }} />,
-      Link: "/icon-gen"
+      icon: <IconGenIcon fontSize="large" sx={{ color: '#f88b6f' }} />,
+      link: "/icon-gen"
     },
     {
       title: 'PDF Generation',
       description: 'Generate PDFs from various content sources easily.',
-      icon: <PictureAsPdfIcon className="card-icon" fontSize="large" style={{ color: '#f65329' }} />,
-      Link: "/pdf-gen"
+      icon: <PictureAsPdfIcon fontSize="large" sx={{ color: '#f65329' }} />,
+      link: "/pdf-gen"
     },
     {
       title: 'Video Generation',
       description: 'Produce videos with AI-driven automation.',
-      icon: <VideoLibraryIcon className="card-icon" fontSize="large" style={{ color: '#f88b6f' }} />,
-      Link: "/video-gen"
+      icon: <VideoLibraryIcon fontSize="large" sx={{ color: '#f88b6f' }} />,
+      link: "/video-gen"
     },
     {
       title: 'Background Generation',
       description: 'Automatically generate backgrounds for your projects.',
-      icon: <BackgroundImageIcon className="card-icon" fontSize="large" style={{ color: '#f65329' }} />,
-      Link: "/bg-gen"
+      icon: <BackgroundImageIcon fontSize="large" sx={{ color: '#f65329' }} />,
+      link: "/bg-gen"
     },
     {
       title: 'Background Removal',
       description: 'Easily remove backgrounds from images.',
-      icon: <RemoveCircleOutlineIcon className="card-icon" fontSize="large" style={{ color: '#f88b6f' }} />,
-      Link: "/bg-remove"
+      icon: <RemoveCircleOutlineIcon fontSize="large" sx={{ color: '#f88b6f' }} />,
+      link: "/bg-remove"
     },
     {
       title: 'Mockup News',
       description: 'Generate mockup news layouts for projects.',
-      icon: <NewspaperIcon className="card-icon" fontSize="large" style={{ color: '#f65329' }} />,
-      Link: "/mockup-news"
+      icon: <NewspaperIcon fontSize="large" sx={{ color: '#f65329' }} />,
+      link: "/mockup-news"
     },
   ];
 
   return (
-    <Container maxWidth="lg" style={{ backgroundColor: '#192e3d', color: 'white', marginTop: '20px', marginBottom: '50px' }}>
-      <Typography variant="h4" align="center" style={{ fontWeight: 'bold', marginBottom: '20px', color: 'white' }}>
+    <Container ref={ref} maxWidth="lg" sx={{ backgroundColor: '#192e3d', color: 'white', mt: 4, mb: 6 }}>
+      <Typography variant="h4" align="center" sx={{ fontWeight: 'bold', mb: 4 }}>
         Tools with Features
       </Typography>
       <Grid container spacing={4} justifyContent="center">
@@ -67,25 +66,31 @@ const ToolFeatures = () => {
           <Grid item xs={12} sm={6} md={3} key={index}>
             <Card
               className="card-container"
-              style={{
+              sx={{
                 height: '100%',
-                borderRadius: '8px',
-                boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.1)',
+                borderRadius: 2,
+                boxShadow: 1,
                 textAlign: 'center',
-                position: 'relative',
+                transition: 'transform 0.3s',
+                '&:hover': {
+                  transform: 'scale(1.05)',
+                  boxShadow: 3,
+                },
               }}
             >
-              <div className="card-background"></div> {/* Gradient background for hover */}
-              <CardContent className="card-content">
+              <CardContent>
                 <div style={{ marginBottom: '15px' }}>{feature.icon}</div>
-                <Typography variant="h6" style={{ fontWeight: 'bold', color: '#192e3d' }}>
+                <Typography variant="h6" sx={{ fontWeight: 'bold', color: '#192e3d' }}>
                   {feature.title}
                 </Typography>
-                <Typography variant="body2" style={{ color: '#192e3d', marginTop: '10px' }}>
+                <Typography variant="body2" sx={{ color: '#192e3d', mt: 1 }}>
                   {feature.description}
                 </Typography>
-                <Link to={feature.Link} style={{ textDecoration: 'none' }}>
-                  <Button variant="contained" className="card-button" style={{ marginTop: '20px', backgroundColor: '#f65329', color: '#fff' }}>
+                <Link to={feature.link} style={{ textDecoration: 'none' }}>
+                  <Button 
+                    variant="contained" 
+                    sx={{ mt: 2, backgroundColor: '#f65329', color: '#fff', '&:hover': { backgroundColor: '#ff7255' } }}
+                  >
                     Learn More
                   </Button>
                 </Link>
@@ -96,6 +101,6 @@ const ToolFeatures = () => {
       </Grid>
     </Container>
   );
-};
+});
 
 export default ToolFeatures;

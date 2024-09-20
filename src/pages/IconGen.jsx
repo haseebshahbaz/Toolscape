@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Typography, Grid, Button } from "@mui/material";
-import iconGenerationBanner from "../assets/IconGen.png"; // Update with correct path
+import iconGenerationBanner from "../assets/IconGen.webp"; // Update with correct path
 import "./Tool.css";
 
 const IconGeneration = () => {
@@ -40,24 +40,21 @@ const IconGeneration = () => {
               variant="body1"
               style={{ marginBottom: "20px", color: "white" }}
             >
-              Easily create custom icons for any project with AI-powered icon
-              generation. Perfect for websites, apps, or branding, this tool
-              offers a quick and efficient way to generate unique and creative
-              icons.{" "}
+              Creating icons that perfectly match your project’s style and
+              requirements has never been easier, thanks to AI Icon Generation.
+              This tool lets you generate fully customized icons from scratch,
+              ensuring that your branding remains cohesive and unique. Whether
+              you need icons for a mobile app, a website, or a product design,
+              AI helps you get exactly what you need in a fraction of the time.
+              <br />
+              <br />
+              By streamlining the creative process, AI Icon Generation removes
+              the frustration of manually designing or searching for the right
+              icon. You provide the design parameters, and AI delivers polished,
+              scalable icons tailored to your exact specifications. Perfect for
+              both seasoned designers and beginners, this tool saves time while
+              ensuring top-notch quality.
             </Typography>
-            <Button
-              variant="contained"
-              style={{
-                backgroundColor: "#f65329",
-                color: "#fff",
-                padding: "10px 20px",
-                borderRadius: "8px",
-                fontSize: "16px",
-                boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
-              }}
-            >
-              Get Started
-            </Button>
           </Grid>
         </Grid>
       </Container>

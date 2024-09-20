@@ -3,11 +3,13 @@ import { Button, Container, Typography } from '@mui/material';
 import { motion } from 'framer-motion';
 import './Hero.css'; // For custom styles if needed
 
-const HeroSection = () => {
+const HeroSection = ({ featuresRef }) => {
+  const handleScroll = () => {
+    featuresRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   return (
     <div className="hero-container">
-
-
       <Container maxWidth="md" className="hero-content">
         <motion.div
           initial={{ x: '-100vw' }}
@@ -17,11 +19,8 @@ const HeroSection = () => {
           <Typography 
             variant="h2" 
             className="hero-title"
-            sx={{
-              fontSize: { xs: '1.5rem', sm: '2.5rem', md: '3.5rem' }, 
-              color: '#fcfcfc', 
-              fontWeight: 'bold'
-            }}>
+            sx={{ fontSize: { xs: '1.5rem', sm: '2.5rem', md: '3.5rem' }, color: '#fcfcfc', fontWeight: 'bold' }}
+          >
             <span className="hero-title-animated">
               Explore the Future of AI Tools with
             </span>
@@ -36,11 +35,8 @@ const HeroSection = () => {
           <Typography 
             variant="h2" 
             component="span"
-            sx={{
-              fontSize: { xs: '2rem', sm: '3rem', md: '4rem' },
-              color: '#f88b6f', 
-              fontWeight: 'bold'
-            }}>
+            sx={{ fontSize: { xs: '2rem', sm: '3rem', md: '4rem' }, color: '#f88b6f', fontWeight: 'bold' }}
+          >
             Toolscape
           </Typography>
         </motion.div>
@@ -52,11 +48,8 @@ const HeroSection = () => {
         >
           <Typography 
             variant="body1" 
-            sx={{ 
-              fontSize: { xs: '0.9rem', sm: '1rem', md: '1.2rem' }, 
-              color: '#fcfcfc', 
-              marginTop: '20px'
-            }}>
+            sx={{ fontSize: { xs: '0.9rem', sm: '1rem', md: '1.2rem' }, color: '#fcfcfc', marginTop: '20px' }}
+          >
             Discover our AI-powered tools designed to transform the way you work. 
             Get started with innovative solutions that enhance productivity.
           </Typography>
@@ -69,12 +62,8 @@ const HeroSection = () => {
         >
           <Button 
             variant="contained" 
-            sx={{ 
-              marginTop: '30px', 
-              backgroundColor: '#f65329', 
-              color: '#fff', 
-              '&:hover': { backgroundColor: '#ff7255' } 
-            }}
+            onClick={handleScroll}
+            sx={{ marginTop: '30px', backgroundColor: '#f65329', color: '#fff', '&:hover': { backgroundColor: '#ff7255' } }}
           >
             Get Started
           </Button>
