@@ -1,4 +1,4 @@
-# AI Tool Showcase
+# Toolscape
 
 ## Project Overview
 The AI Tool Showcase is a comprehensive web application developed as part of my internship. It provides an interactive platform for showcasing various AI-powered tools, including AI Image Generation, Icon Generation, PDF Generation, Video Generation, Background Generation, Background Removal, and Mockup News.
