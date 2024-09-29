@@ -58,7 +58,7 @@ To start the development server, run:
 ```bash
 npm run dev
 ```
-The application will be available at `http://localhost:3000`.
+The application will be available at `(https://toolscape.vercel.app/)`.
 
 ## Screenshots
 ![AI Tool Showcase](assets/screenshot.png)
